@@ -190,7 +190,7 @@
   
   
   <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="https://zhangao-sudo.github.io.git/2019/10/14/test/">
+    <link itemprop="mainEntityOfPage" href="https://zhangao-sudo.github.io.git/2019/10/14/jQuery1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangao">
@@ -204,7 +204,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/2019/10/14/test/" class="post-title-link" itemprop="url">test</a>
+            <a href="/2019/10/14/jQuery1/" class="post-title-link" itemprop="url">jQuery的学习笔记1 js的闭包调用</a>
           
         </h1>
 
@@ -219,8 +219,12 @@
                 
               
 
-              <time title="Erstellt: 2019-10-14 19:11:27" itemprop="dateCreated datePublished" datetime="2019-10-14T19:11:27+08:00">2019-10-14</time>
+              <time title="Erstellt: 2019-10-14 22:30:45 / Geändert am: 22:38:42" itemprop="dateCreated datePublished" datetime="2019-10-14T22:30:45+08:00">2019-10-14</time>
             </span>
+          
+            
+
+            
           
 
           
@@ -234,7 +238,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <p>##js的闭包调用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(function(obj)</span><br><span class="line">&#123;</span><br><span class="line">	obj.test=function()</span><br><span class="line">	&#123;</span><br><span class="line">		alert(&quot;函数体存入&quot;)；</span><br><span class="line">	&#125;</span><br><span class="line">	alert(&quot;匿名部内部调用&quot;)；</span><br><span class="line">&#125;)(window)//将数据存入window对象，其无法被覆盖</span><br></pre></td></tr></table></figure>
+
+<p>##thanks</p>
+
         
       
     </div>

@@ -55,14 +55,18 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://zhangao-sudo.github.io.git/archives/index.html">
+  <meta name="description" content="##js的闭包调用 12345678(function(obj)&amp;#123;	obj.test=function()	&amp;#123;		alert(&amp;quot;函数体存入&amp;quot;)；	&amp;#125;	alert(&amp;quot;匿名部内部调用&amp;quot;)；&amp;#125;)(window)//将数据存入window对象，其无法被覆盖  ##thanks">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jQuery的学习笔记1 js的闭包调用">
+<meta property="og:url" content="https://zhangao-sudo.github.io.git/2019/10/14/jQuery1/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="##js的闭包调用 12345678(function(obj)&amp;#123;	obj.test=function()	&amp;#123;		alert(&amp;quot;函数体存入&amp;quot;)；	&amp;#125;	alert(&amp;quot;匿名部内部调用&amp;quot;)；&amp;#125;)(window)//将数据存入window对象，其无法被覆盖  ##thanks">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-10-14T14:38:42.646Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-  <link rel="canonical" href="https://zhangao-sudo.github.io.git/archives/">
+<meta name="twitter:title" content="jQuery的学习笔记1 js的闭包调用">
+<meta name="twitter:description" content="##js的闭包调用 12345678(function(obj)&amp;#123;	obj.test=function()	&amp;#123;		alert(&amp;quot;函数体存入&amp;quot;)；	&amp;#125;	alert(&amp;quot;匿名部内部调用&amp;quot;)；&amp;#125;)(window)//将数据存入window对象，其无法被覆盖  ##thanks">
+  <link rel="canonical" href="https://zhangao-sudo.github.io.git/2019/10/14/jQuery1/">
 
 
 <script id="page-configurations">
@@ -70,13 +74,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>Archiv | Hexo</title>
+  <title>jQuery的学习笔记1 js的闭包调用 | Hexo</title>
   
 
 
@@ -168,15 +172,6 @@
 
     
 
-  
-    
-    
-  
-    
-    
-  
-  
-
 </nav>
 </div>
     </header>
@@ -194,95 +189,101 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        
-        
-        
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://zhangao-sudo.github.io.git/2019/10/14/jQuery1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhangao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">jQuery的学习笔记1 js的闭包调用
+
           
-        
-        <span class="collection-header">Öhm..! Insgesamt 2 Artikel. Bleib dran.</span>
-      </div>
-      
+        </h1>
 
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-  
-  
+              
+                
+              
 
-  
+              <time title="Erstellt: 2019-10-14 22:30:45 / Geändert am: 22:38:42" itemprop="dateCreated datePublished" datetime="2019-10-14T22:30:45+08:00">2019-10-14</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+
+        </div>
+      </header>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>##js的闭包调用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(function(obj)</span><br><span class="line">&#123;</span><br><span class="line">	obj.test=function()</span><br><span class="line">	&#123;</span><br><span class="line">		alert(&quot;函数体存入&quot;)；</span><br><span class="line">	&#125;</span><br><span class="line">	alert(&quot;匿名部内部调用&quot;)；</span><br><span class="line">&#125;)(window)//将数据存入window对象，其无法被覆盖</span><br></pre></td></tr></table></figure>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-10-14T22:30:45+08:00"
-              content="2019-10-14">
-          10-14
-        </time>
-      </div>
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/10/14/jQuery1/" itemprop="url">
-            <span itemprop="name">jQuery的学习笔记1 js的闭包调用</span>
-          </a>
-        
-      </h2>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-10-14T15:06:59+08:00"
-              content="2019-10-14">
-          10-14
-        </time>
-      </div>
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/10/14/hello-world/" itemprop="url">
-            <span itemprop="name">Knn算法</span>
-          </a>
-        
-      </h2>
-
-    </header>
-  </article>
-
-
-
+<p>##thanks</p>
 
     </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/10/14/hello-world/" rel="next" title="Knn算法">
+                  <i class="fa fa-chevron-left"></i> Knn算法
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
@@ -301,6 +302,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
