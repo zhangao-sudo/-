@@ -47,9 +47,9 @@
     path: '',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
-      copy_button: 'کپی',
-      copy_success: 'کپی شد',
-      copy_failure: 'کپی انجام نشد'
+      copy_button: 'Kopieren',
+      copy_success: 'Kopiert',
+      copy_failure: 'Kopieren fehlgeschlagen'
     },
     sidebarPadding: 40
   };
@@ -130,7 +130,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="تغییر ناوبری">
+    <button aria-label="Navigationsleiste an/ausschalten">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -150,7 +150,7 @@
       
     
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>صفحه اصلی</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Startseite</a>
 
   </li>
       
@@ -161,7 +161,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>بایگانی</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archiv</a>
 
   </li>
   </ul>
@@ -190,6 +190,74 @@
   
   
   <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://zhangao-sudo.github.io.git/2019/10/14/test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhangao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2019/10/14/test/" class="post-title-link" itemprop="url">test</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
+
+              
+                
+              
+
+              <time title="Erstellt: 2019-10-14 19:11:27" itemprop="dateCreated datePublished" datetime="2019-10-14T19:11:27+08:00">2019-10-14</time>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
     <link itemprop="mainEntityOfPage" href="https://zhangao-sudo.github.io.git/2019/10/14/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -213,13 +281,13 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">نوشته شده در</span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
               
                 
               
 
-              <time title="ایجاد شده: 2019-10-14 15:06:59 / تغییر یافته: 18:50:04" itemprop="dateCreated datePublished" datetime="2019-10-14T15:06:59+08:00">2019-10-14</time>
+              <time title="Erstellt: 2019-10-14 15:06:59 / Geändert am: 19:17:15" itemprop="dateCreated datePublished" datetime="2019-10-14T15:06:59+08:00">2019-10-14</time>
             </span>
           
             
@@ -251,7 +319,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x_test= np.array([4.0,  3.3 ])//加入点 4， 3.3</span><br><span class="line">x_test</span><br></pre></td></tr></table></figure>
 
 <p>##绘图<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">黄色点为测试数据</span><br></pre></td></tr></table></figure></p>
-<p>##判断<br> <figure class="highlight plain"><figcaption><span>math import sqrt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">distances = [sqrt(np.sum((x - x_test)**2)) for x in X_train]//计算与各点距离</span><br><span class="line">sort = np.argsort(distances)//按距离排序</span><br><span class="line">K = 3 //选择3个点</span><br><span class="line">topK = [y_train[i] for i in sort[:K]]//查看这三个点的属性（0和1）</span><br><span class="line">predict_y = votes.most_common(1)[0][0]//判断</span><br></pre></td></tr></table></figure></p>
+<p><img src="/.git//test1.jpg" alt="aini1"><br>##判断<br> <figure class="highlight plain"><figcaption><span>math import sqrt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">distances = [sqrt(np.sum((x - x_test)**2)) for x in X_train]//计算与各点距离</span><br><span class="line">sort = np.argsort(distances)//按距离排序</span><br><span class="line">K = 3 //选择3个点</span><br><span class="line">topK = [y_train[i] for i in sort[:K]]//查看这三个点的属性（0和1）</span><br><span class="line">predict_y = votes.most_common(1)[0][0]//判断</span><br></pre></td></tr></table></figure></p>
 <hr>
 <h2 id="title-Hello-World"><a href="#title-Hello-World" class="headerlink" title="title: Hello World"></a>title: Hello World</h2><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="hello-Hexo"><a href="#hello-Hexo" class="headerlink" title="hello Hexo"></a>hello Hexo</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
@@ -309,10 +377,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          فهرست مطالب
+          Inhaltsverzeichnis
         </li>
         <li class="sidebar-nav-overview">
-          نمای کلی
+          Übersicht
         </li>
       </ul>
 
@@ -332,8 +400,8 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">پست ها</span>
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">Artikel</span>
         </a>
       </div>
     
@@ -360,9 +428,9 @@
   </span>
   <span class="author" itemprop="copyrightHolder">zhangao</span>
 </div>
-  <div class="powered-by">قدرت گرفته از <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">پوسته – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.4.0</div>
+  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.4.0</div>
 
         
 
