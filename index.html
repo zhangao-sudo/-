@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-
-
-
-
-
-<html lang="">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 3.9.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.0">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.0">
-  <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+<link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
 
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    version: '7.4.0',
+    scheme: 'Gemini',
+    version: '7.4.2',
     exturl: false,
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
@@ -47,22 +42,23 @@
     path: '',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
-      copy_button: 'Kopieren',
-      copy_success: 'Kopiert',
-      copy_failure: 'Kopieren fehlgeschlagen'
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
     },
     sidebarPadding: 40
   };
 </script>
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Welcome to my blog">
 <meta property="og:url" content="https://zhangao-sudo.github.io.git/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="default">
+<meta property="og:site_name" content="Welcome to my blog">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-  <link rel="canonical" href="https://zhangao-sudo.github.io.git/">
+<meta name="twitter:title" content="Welcome to my blog">
+
+<link rel="canonical" href="https://zhangao-sudo.github.io.git/">
 
 
 <script id="page-configurations">
@@ -76,10 +72,8 @@
   };
 </script>
 
-  <title>Hexo</title>
+  <title>Welcome to my blog</title>
   
-
-
 
 
 
@@ -98,7 +92,6 @@
   .use-motion .post-body,
   .use-motion .collection-header { opacity: initial; }
 
-  .use-motion .logo,
   .use-motion .site-title,
   .use-motion .site-subtitle {
     opacity: initial;
@@ -110,31 +103,33 @@
   </style>
 </noscript>
 
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/schemes/clicklove.js"></script>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-meta">
 
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Welcome to my blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Navigationsleiste an/ausschalten">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
   </div>
 </div>
 
@@ -142,31 +137,47 @@
 <nav class="site-nav">
   
   <ul id="menu" class="menu">
-      
-      
-      
-        
         <li class="menu-item menu-item-home">
-      
-    
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Startseite</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-archives">
-      
-    
+        <li class="menu-item menu-item-about">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archiv</a>
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">0</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">0</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">3</span></a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-calendar"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-fw fa-sitemap"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-fw fa-heartbeat"></i>公益 404</a>
 
   </li>
   </ul>
-
-    
 
 </nav>
 </div>
@@ -179,33 +190,34 @@
   </div>
 
 
-    <main id="main" class="main">
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content">
+          
+
+          <div class="content">
             
-  <div id="posts" class="posts-expand">
-        <article itemscope itemtype="http://schema.org/Article">
+
+  <div class="posts-expand">
+        
   
   
-  
-  <div class="post-block home">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://zhangao-sudo.github.io.git/2019/10/26/JSP学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/agrils.jpg">
       <meta itemprop="name" content="zhangao">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Welcome to my blog">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2019/10/26/JSP学习/" class="post-title-link" itemprop="url">JSP学习</a>
           
+            <a href="/2019/10/26/JSP学习/" class="post-title-link" itemprop="url">JSP学习</a>
         </h1>
 
         <div class="post-meta">
@@ -213,15 +225,10 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              
-                
-              
-
-              <time title="Erstellt: 2019-10-26 14:29:11" itemprop="dateCreated datePublished" datetime="2019-10-26T14:29:11+08:00">2019-10-26</time>
+              <time title="创建时间：2019-10-26 14:29:11" itemprop="dateCreated datePublished" datetime="2019-10-26T14:29:11+08:00">2019-10-26</time>
             </span>
-          
 
           
 
@@ -235,7 +242,6 @@
 
       
           
-        
       
     </div>
 
@@ -243,37 +249,32 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
-  </div>
-  
-  
-  
   </article>
+  
+  
+  
 
-    
-        <article itemscope itemtype="http://schema.org/Article">
+        
   
   
-  
-  <div class="post-block home">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://zhangao-sudo.github.io.git/2019/10/15/jQuery学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/agrils.jpg">
       <meta itemprop="name" content="zhangao">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Welcome to my blog">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2019/10/15/jQuery学习/" class="post-title-link" itemprop="url">jQuery学习</a>
           
+            <a href="/2019/10/15/jQuery学习/" class="post-title-link" itemprop="url">jQuery学习</a>
         </h1>
 
         <div class="post-meta">
@@ -281,27 +282,17 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              
-                
-              
-
-              <time title="Erstellt: 2019-10-15 18:44:12" itemprop="dateCreated datePublished" datetime="2019-10-15T18:44:12+08:00">2019-10-15</time>
+              <time title="创建时间：2019-10-15 18:44:12" itemprop="dateCreated datePublished" datetime="2019-10-15T18:44:12+08:00">2019-10-15</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Bearbeitet am</span>
-                <time title="Geändert am: 2019-10-16 21:04:14" itemprop="dateModified" datetime="2019-10-16T21:04:14+08:00">2019-10-16</time>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-10-29 08:20:10" itemprop="dateModified" datetime="2019-10-29T08:20:10+08:00">2019-10-29</time>
               </span>
-            
-          
 
           
 
@@ -314,27 +305,39 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>##js的闭包调用</p>
+          <p>##JAVA中级教程</p>
+<h2 id="web开发"><a href="#web开发" class="headerlink" title="web开发"></a>web开发</h2><h2 id="前端工具JQuery的学习"><a href="#前端工具JQuery的学习" class="headerlink" title="前端工具JQuery的学习"></a>前端工具JQuery的学习</h2><p>当我们使用前端的js来编写代码时，总感觉调用html控件以及逻辑编写太麻烦，于是就有了jQuery来帮你的忙，jQuery是对JS的一种封装框架，可以使我们更加方便的对控件进行调用。<br>   ##JQuery的引入<br>首先将你下载好的JQuery放在项目的某一文件夹下<br>并在需要引入的html文件添加以下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;../jquery/jquery-.x.x.x.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>##js的闭包调用<br>JQuery的封装原理：<br>如果将JQuery采用像类一样名称封装调用<br>在实际开发中难免会出现内部命名重复的情况，所以将其封装在window对象下，防止其被覆盖。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(function(obj)</span><br><span class="line">&#123;</span><br><span class="line">	obj.test=function()</span><br><span class="line">	&#123;</span><br><span class="line">		alert(&quot;函数体存入&quot;)；</span><br><span class="line">	&#125;</span><br><span class="line">	alert(&quot;匿名部内部调用&quot;)；</span><br><span class="line">&#125;)(window)//将数据存入window对象，其无法被覆盖</span><br></pre></td></tr></table></figure>
 
-<p><img src="/.git//test1.jpg" alt><br>##选择器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;script src=&quot;../jquery/jquery-1.9.1.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br><span class="line">		&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">			function TestId()</span><br><span class="line">			&#123;</span><br><span class="line">				var inp=$(&quot;#uname&quot;);</span><br><span class="line">				alert(inp.val());</span><br><span class="line">			&#125;</span><br><span class="line">			function TestEle()</span><br><span class="line">			&#123;</span><br><span class="line">				var inp=$(&quot;input&quot;);</span><br><span class="line">				alert(inp.length);</span><br><span class="line">			&#125;</span><br><span class="line">			function TestClass()</span><br><span class="line">			&#123;</span><br><span class="line">				var inps=$(&quot;.common&quot;);</span><br><span class="line">				alert(inps.length);</span><br><span class="line">			&#125;</span><br><span class="line">			function Testchild()</span><br><span class="line">			&#123;</span><br><span class="line">				var inps=$(&quot;div&gt;input&quot;);</span><br><span class="line">				alert(inps.length);</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			.common&#123;&#125;</span><br><span class="line">			#showdiv&#123;</span><br><span class="line">				width: 300px;</span><br><span class="line">				height: 200px;</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;h3&gt;jquery 选择器&lt;/h3&gt;</span><br><span class="line">	&lt;hr &gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;class&quot;onclick=&quot;TestClass()&quot; class=&quot;common&quot; /&gt;&lt;br&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;ceshiid&quot;onclick=&quot;TestId()&quot; /&gt;&lt;br&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;ceshiviaoqian&quot;onclick=&quot;TestEle()&quot; /&gt;&lt;br&gt;</span><br><span class="line">		&lt;input type=&quot;text&quot; name=&quot;uname&quot; id=&quot;uname&quot; value=&quot;zhangsan&quot;class=&quot;common&quot; /&gt;</span><br><span class="line">		&lt;div id=&quot;showdiv&quot;&gt;</span><br><span class="line">			&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;child&quot;onclick=&quot;Testchild()&quot; /&gt;&lt;br&gt;</span><br><span class="line">			&lt;input type=&quot;text&quot; name=&quot;uname&quot; id=&quot;uname2&quot; value=&quot;zhangsan&quot;class=&quot;common&quot; /&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>##JQuery基本选择器<br>JQuery选择器是JQuery的基础，采用$()的方式进行选取控制标签<br>$(“#id”)  选取带有id的控件<br>$(“controlType”)  选取控件属性为controlType的控件 返回一组对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var inp=$(&quot;input&quot;);</span><br></pre></td></tr></table></figure>
 
-<p>##属性</p>
+<p>$(“.common”) 选取.common类的控件，同样返回一组对象<br>组合选择器：<br>$(“选择器，选择器，选择器，…..”) 组合选择器返回的是所有选择器所指定的HTML元素对象。<br>jQuery 的层级选择器：<br>祖先获取所有后代：<br>$(“选择器 标签名”) 返回的是选择器下的所有指明的后代元素。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var inps=$(&quot;#div&gt;input&quot;);</span><br></pre></td></tr></table></figure>
+
+<p>选择所有子元素<br>$(“选择器&gt;选择器”) 返回的是所有的子元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var input=$(&quot;#div input&quot;);</span><br></pre></td></tr></table></figure>
+
+<p>选择紧跟的元素<br>$(“选择器+选择器”) 返回的是紧跟的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var objs=$(&quot;img+br+span&quot;);</span><br></pre></td></tr></table></figure>
+
+<p>##属性<br>jquery操作元素属性<br>获取：<br>对象名.attr(“属性名”) 返回属性值。返回的是默认值<br>注意：<br>如果要获取用户数据使用对象名.val()<br>修改<br>对象名.attr(“属性名”,”新的值”)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;script src=&quot;../jquery/jquery-1.9.1.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		</span><br><span class="line">		&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">			function Testfield()</span><br><span class="line">			&#123;</span><br><span class="line">				var uname=$(&quot;#uname&quot;);</span><br><span class="line">				alert(uname.attr(&quot;type&quot;)+uname.val()+uname.attr(&quot;value&quot;));</span><br><span class="line">				alert(uname.attr(&quot;value&quot;));//不能获取实时数据</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">			function Testfield2()</span><br><span class="line">			&#123;</span><br><span class="line">				var uname=$(&quot;#uname&quot;);</span><br><span class="line">				uname.attr(&quot;type&quot;,&quot;button&quot;);</span><br><span class="line">			</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">			&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;xiuhai&quot;onclick=&quot;Testfield2()&quot; /&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot;onclick=&quot;Testfield()&quot; /&gt;</span><br><span class="line">		&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;uname&quot; value=&quot;zhangsan&quot; /&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-<p>##元素内容</p>
+<p>##元素内容<br>jQuery操作元素内容<br>获取：<br>元素对象.html() 返回元素的所有内容包括HTML标签<br>元素对象.text() 返回所有的文本内容，不包括HTML标签<br>修改<br>元素对象.html(“新的内容”) 会覆盖原有内容，解析HTML<br>标签<br>元素对象.text(“新的内容”) 覆盖原有内容，不解析HTML<br>标签</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;script src=&quot;../jquery/jquery-1.9.1.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">			function Testhtml()</span><br><span class="line">			&#123;</span><br><span class="line">				var showdiv=$(&quot;#showdiv&quot;);</span><br><span class="line">				alert(showdiv.html());</span><br><span class="line">			&#125;</span><br><span class="line">			function Testhtml2()</span><br><span class="line">			&#123;</span><br><span class="line">				var showdiv=$(&quot;#showdiv&quot;);</span><br><span class="line">				showdiv.html(&quot;&lt;i&gt;我是无敌的2&lt;/i&gt;&quot;)</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">			function TestText()</span><br><span class="line">			&#123;</span><br><span class="line">				var showdiv=$(&quot;#showdiv&quot;);</span><br><span class="line">			     alert(showdiv.text());</span><br><span class="line">				showdiv.text(&quot;aini&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;h3&gt;操作元素&lt;/h3&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;html&quot;onclick=&quot;Testhtml()&quot; /&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;xiugai&quot;onclick=&quot;Testhtml2()&quot; /&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;Text&quot;onclick=&quot;TestText()&quot; /&gt;</span><br><span class="line">		&lt;div id=&quot;showdiv&quot;&gt;</span><br><span class="line">		&lt;div id=&quot;showdiv&quot;&gt;</span><br><span class="line">			&lt;b&gt;我是无敌的&lt;/b&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-<p>##操作样式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			#showdiv&#123;</span><br><span class="line">				width:300px;</span><br><span class="line">				height:300px;</span><br><span class="line">				border: solid 1px;</span><br><span class="line">			&#125;</span><br><span class="line">			.common&#123;</span><br><span class="line">				width:300px;</span><br><span class="line">				height:300px;</span><br><span class="line">				border: solid 1px;</span><br><span class="line">				background: royalblue;</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">		&lt;script src=&quot;../jquery/jquery-1.9.1.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br><span class="line">		&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">			function testcss()</span><br><span class="line">			&#123;</span><br><span class="line">				var showdiv=$(&quot;#showdiv&quot;);</span><br><span class="line">				showdiv.css(&quot;background-color&quot;,&quot;orange&quot;);</span><br><span class="line">				alert(showdiv.css(&quot;width&quot;));</span><br><span class="line">				</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">			function testcss2()</span><br><span class="line">			&#123;</span><br><span class="line">				var div=$(&quot;#div01&quot;);</span><br><span class="line">				div.css(&#123;&quot;border&quot;:&quot;solid 1px&quot;,&quot;width&quot;:&quot;300px&quot;,&quot;height&quot;:&quot;300px&quot;&#125;);//多重写json传参</span><br><span class="line">				</span><br><span class="line">				div.addClass(&quot;common&quot;);//增加样式 可叠加</span><br><span class="line">				</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">			function testcss3()</span><br><span class="line">			&#123;</span><br><span class="line">				var div=$(&quot;#div01&quot;);</span><br><span class="line">				</span><br><span class="line">				div.removeClass(&quot;common&quot;);</span><br><span class="line">				</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;h3&gt;操作元素样式&lt;/h3&gt;</span><br><span class="line">	&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; onclick=&quot;testcss2()&quot;/&gt;</span><br><span class="line">	&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; onclick=&quot;testcss3()&quot;/&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div id=&quot;showdiv&quot;&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div id=&quot;div01&quot;&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>##操作样式<br>jquery操作样式：<br>添加:<br>元素对象.css(“样式名”,”样式值”);<br>元素对象.css({“样式名”:”样式值”,”样式名”:”样式值<br>“,”样式名”:”样式值”,….})<br>修改<br>元素对象.css(“样式名”,”新的样式”);<br>注意:<br>也可以元素对象名.addClass(“类选择器名”);</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			#showdiv&#123;</span><br><span class="line">				width:300px;</span><br><span class="line">				height:300px;</span><br><span class="line">				border: solid 1px;</span><br><span class="line">			&#125;</span><br><span class="line">			.common&#123;</span><br><span class="line">				width:300px;</span><br><span class="line">				height:300px;</span><br><span class="line">				border: solid 1px;</span><br><span class="line">				background: royalblue;</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">		&lt;script src=&quot;../jquery/jquery-1.9.1.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br><span class="line">		&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">			function testcss()</span><br><span class="line">			&#123;</span><br><span class="line">				var showdiv=$(&quot;#showdiv&quot;);</span><br><span class="line">				showdiv.css(&quot;background-color&quot;,&quot;orange&quot;);</span><br><span class="line">				alert(showdiv.css(&quot;width&quot;));</span><br><span class="line">				</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">			function testcss2()</span><br><span class="line">			&#123;</span><br><span class="line">				var div=$(&quot;#div01&quot;);</span><br><span class="line">				div.css(&#123;&quot;border&quot;:&quot;solid 1px&quot;,&quot;width&quot;:&quot;300px&quot;,&quot;height&quot;:&quot;300px&quot;&#125;);//多重写json传参</span><br><span class="line">				</span><br><span class="line">				div.addClass(&quot;common&quot;);//增加样式 可叠加</span><br><span class="line">				</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">			function testcss3()</span><br><span class="line">			&#123;</span><br><span class="line">				var div=$(&quot;#div01&quot;);</span><br><span class="line">				</span><br><span class="line">				div.removeClass(&quot;common&quot;);</span><br><span class="line">				</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;h3&gt;操作元素样式&lt;/h3&gt;</span><br><span class="line">	&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; onclick=&quot;testcss2()&quot;/&gt;</span><br><span class="line">	&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;&quot; onclick=&quot;testcss3()&quot;/&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div id=&quot;showdiv&quot;&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div id=&quot;div01&quot;&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-<p>##操作文档结构</p>
+<p>##操作文档结构<br>jQuery获取元素对象<br>操作文档结构：修改，添加，删除<br>内部插入：<br>元素对象名.append(“HTML代码”) 追加(创建新的节点并追加)<br>元素对象名.appendTo(“选择器”) 将制定的元素移动并追加到<br>指定的元素中(将别的节点移动到追加)<br>元素对象名.prepend(“HTML代码”) 在前面追加(创建新的节点<br>并追加)<br>元素对象名.prependTo(“选择器”) 将制定的元素移动并在前面<br>追加到指定的元素中(将别的节点移动到在前面追加)<br>外部插入:<br>元素对象名.after(“HTML代码”) 在元素之后添加<br>元素对象名.before(“HTML代码”) 在元素之前添加<br>元素对象名.insertAfter(“选择器”) 将指定的节点移动到指定的元素后<br>元素对象名.insertBefore(“选择器”) 将指定的节点移动到指定的元素前<br>替换：<br>replace()<br>删除：<br>empty() remove() detach()<br>克隆：<br>clone() clone(true)<br>–&gt; <script type="text/javascript"> </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;script src=&quot;jquery/jquery.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br><span class="line">		&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">			</span><br><span class="line">			function Testclass()&#123;</span><br><span class="line">			var div=$(&quot;#showdiv&quot;);</span><br><span class="line">			$(&quot;#b1&quot;).appendTo(div);</span><br><span class="line">			$(&quot;#b1&quot;).prepend(&quot;	&lt;b&gt;aini2&lt;/b&gt;&quot;)</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			.common&#123;</span><br><span class="line">				width:300px;</span><br><span class="line">				height:300px;</span><br><span class="line">				background: blueviolet;</span><br><span class="line">				border:solid 1px</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;ceshi&quot; onclick=&quot;Testclass()&quot;/&gt;</span><br><span class="line">		&lt;b id=&quot;b1&quot;&gt;asdjksa&lt;/b&gt;</span><br><span class="line">		&lt;div id=&quot;showdiv&quot;class=common &gt;</span><br><span class="line">			</span><br><span class="line">			&lt;b&gt;aini&lt;/b&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
 <p>##元素添加属性、</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;script src=&quot;jquery.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br><span class="line">		&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">			function Testfun()</span><br><span class="line">			&#123;</span><br><span class="line">				var btn=document.getElementById(&quot;btn1&quot;);</span><br><span class="line">				btn.onclick=function()</span><br><span class="line">				&#123;</span><br><span class="line">					alert(&quot;js ceshi&quot;);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			function Testfun2()</span><br><span class="line">			&#123;</span><br><span class="line">				var btn=$(&quot;#btn2&quot;);</span><br><span class="line">				btn.bind(&quot;click&quot;,function()&#123;alert(&quot;jq ceshi&quot;)&#125;);</span><br><span class="line">				btn.unbind(&quot;click&quot;);//jiebang</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;ceshi&quot; onclick=&quot;Testfun()&quot; /&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;ceshi2&quot; onclick=&quot;Testfun2()&quot; /&gt;</span><br><span class="line">		&lt;hr &gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;btn1&quot; value=&quot;&quot; /&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;btn2&quot; value=&quot;&quot; /&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-        
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;script src=&quot;jquery.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br><span class="line">		&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">			function Testfun()</span><br><span class="line">			&#123;</span><br><span class="line">				var btn=document.getElementById(&quot;btn1&quot;);</span><br><span class="line">				btn.onclick=function()</span><br><span class="line">				&#123;</span><br><span class="line">					alert(&quot;js ceshi&quot;);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			function Testfun2()</span><br><span class="line">			&#123;</span><br><span class="line">				var btn=$(&quot;#btn2&quot;);</span><br><span class="line">				btn.bind(&quot;click&quot;,function()&#123;alert(&quot;jq ceshi&quot;)&#125;);</span><br><span class="line">				btn.unbind(&quot;click&quot;);//jiebang</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;ceshi&quot; onclick=&quot;Testfun()&quot; /&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;ceshi2&quot; onclick=&quot;Testfun2()&quot; /&gt;</span><br><span class="line">		&lt;hr &gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;btn1&quot; value=&quot;&quot; /&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;btn2&quot; value=&quot;&quot; /&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></script></p>
       
     </div>
 
@@ -342,37 +345,32 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
-  </div>
-  
-  
-  
   </article>
+  
+  
+  
 
-    
-        <article itemscope itemtype="http://schema.org/Article">
+        
   
   
-  
-  <div class="post-block home">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://zhangao-sudo.github.io.git/2019/10/14/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/agrils.jpg">
       <meta itemprop="name" content="zhangao">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Welcome to my blog">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2019/10/14/hello-world/" class="post-title-link" itemprop="url">Knn算法</a>
           
+            <a href="/2019/10/14/hello-world/" class="post-title-link" itemprop="url">Knn算法</a>
         </h1>
 
         <div class="post-meta">
@@ -380,27 +378,17 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              
-                
-              
-
-              <time title="Erstellt: 2019-10-14 15:06:59" itemprop="dateCreated datePublished" datetime="2019-10-14T15:06:59+08:00">2019-10-14</time>
+              <time title="创建时间：2019-10-14 15:06:59" itemprop="dateCreated datePublished" datetime="2019-10-14T15:06:59+08:00">2019-10-14</time>
             </span>
-          
-            
-
-            
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Bearbeitet am</span>
-                <time title="Geändert am: 2019-10-16 21:20:26" itemprop="dateModified" datetime="2019-10-16T21:20:26+08:00">2019-10-16</time>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-10-16 21:20:26" itemprop="dateModified" datetime="2019-10-16T21:20:26+08:00">2019-10-16</time>
               </span>
-            
-          
 
           
 
@@ -442,7 +430,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
-        
       
     </div>
 
@@ -450,19 +437,17 @@
     
     
       <footer class="post-footer">
-          <div class="post-eof"></div>
-        
+        <div class="post-eof"></div>
       </footer>
-  </div>
-  
-  
-  
   </article>
+  
+  
+  
 
-    
   </div>
 
   
+
 
 
           </div>
@@ -471,12 +456,10 @@
         </div>
           
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
 
   <aside class="sidebar">
@@ -484,10 +467,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Inhaltsverzeichnis
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          Übersicht
+          站点概览
         </li>
       </ul>
 
@@ -495,25 +478,33 @@
       <div class="post-toc-wrap sidebar-panel">
       </div>
       <!--/noindex-->
-
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=31311706&auto=1&height=66"></iframe>
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="zhangao"
+    src="/images/agrils.jpg">
   <p class="site-author-name" itemprop="name">zhangao</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-        
           <a href="/archives/">
         
           <span class="site-state-item-count">3</span>
-          <span class="site-state-item-name">Artikel</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
-    
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zhangao-sudo" title="GitHub &rarr; https://github.com/zhangao-sudo" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/17836572518@163.com" title="E-Mail &rarr; 17836572518@163.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
 
 
 
@@ -527,17 +518,24 @@
       </div>
     </main>
 
-    <footer id="footer" class="footer">
+    <footer class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love" id="animate">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">zhangao</span>
 </div>
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
+  </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.4.0</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.2
+  </div>
 
         
 
@@ -558,12 +556,12 @@
   </div>
 
   
-  <script src="/lib/anime.min.js?v=3.1.0"></script>
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
-<script src="/js/schemes/muse.js?v=7.4.0"></script>
-<script src="/js/next-boot.js?v=7.4.0"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
 
 
 
@@ -584,16 +582,10 @@
 
 
 
-
-
-
-
-
   
 
   
 
-  
-
+ 
 </body>
 </html>
