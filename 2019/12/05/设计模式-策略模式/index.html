@@ -50,16 +50,22 @@
   };
 </script>
 
-  <meta property="og:type" content="article">
-<meta property="og:title" content="JSP学习">
-<meta property="og:url" content="https://zhangao-sudo.github.io.git/2019/10/26/JSP学习/index.html">
+  <meta name="description" content="#设计模式-策略模式 ##设计模式   ##策略模式的动机    解决多方法以及选择的问题，在日常生活中，常常出现一个问题在不同环境下的拥有不同解决方案，如何合适的选取的相应的解决方案，    这就是策略模式所解决的的问题，打个比方说，我们去要去A地，可选择的交通方式有很多，汽车，火车，飞机，轮船，可选的路径也有很多，    途径B地或者途径C地等，然后根据具体情况选择相应的方案，比如说你想快速到">
+<meta property="og:type" content="article">
+<meta property="og:title" content="设计模式-策略模式">
+<meta property="og:url" content="https://zhangao-sudo.github.io.git/2019/12/05/设计模式-策略模式/index.html">
 <meta property="og:site_name" content="Welcome to my blog">
+<meta property="og:description" content="#设计模式-策略模式 ##设计模式   ##策略模式的动机    解决多方法以及选择的问题，在日常生活中，常常出现一个问题在不同环境下的拥有不同解决方案，如何合适的选取的相应的解决方案，    这就是策略模式所解决的的问题，打个比方说，我们去要去A地，可选择的交通方式有很多，汽车，火车，飞机，轮船，可选的路径也有很多，    途径B地或者途径C地等，然后根据具体情况选择相应的方案，比如说你想快速到">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-26T06:29:11.118Z">
+<meta property="og:image" content="https://zhangao-sudo.github.io.git/images/shejicelue01.jpg">
+<meta property="og:image" content="https://zhangao-sudo.github.io.git/images/shejicelue02.jpg">
+<meta property="og:updated_time" content="2019-12-05T12:31:29.854Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JSP学习">
+<meta name="twitter:title" content="设计模式-策略模式">
+<meta name="twitter:description" content="#设计模式-策略模式 ##设计模式   ##策略模式的动机    解决多方法以及选择的问题，在日常生活中，常常出现一个问题在不同环境下的拥有不同解决方案，如何合适的选取的相应的解决方案，    这就是策略模式所解决的的问题，打个比方说，我们去要去A地，可选择的交通方式有很多，汽车，火车，飞机，轮船，可选的路径也有很多，    途径B地或者途径C地等，然后根据具体情况选择相应的方案，比如说你想快速到">
+<meta name="twitter:image" content="https://zhangao-sudo.github.io.git/images/shejicelue01.jpg">
 
-<link rel="canonical" href="https://zhangao-sudo.github.io.git/2019/10/26/JSP学习/">
+<link rel="canonical" href="https://zhangao-sudo.github.io.git/2019/12/05/设计模式-策略模式/">
 
 
 <script id="page-configurations">
@@ -73,7 +79,7 @@
   };
 </script>
 
-  <title>JSP学习 | Welcome to my blog</title>
+  <title>设计模式-策略模式 | Welcome to my blog</title>
   
 
 
@@ -204,7 +210,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://zhangao-sudo.github.io.git/2019/10/26/JSP学习/">
+    <link itemprop="mainEntityOfPage" href="https://zhangao-sudo.github.io.git/2019/12/05/设计模式-策略模式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/agrils.jpg">
@@ -217,7 +223,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          JSP学习
+          设计模式-策略模式
         </h1>
 
         <div class="post-meta">
@@ -226,8 +232,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-10-26 14:29:11" itemprop="dateCreated datePublished" datetime="2019-10-26T14:29:11+08:00">2019-10-26</time>
+              <time title="创建时间：2019-12-05 19:28:09 / 修改时间：20:31:29" itemprop="dateCreated datePublished" datetime="2019-12-05T19:28:09+08:00">2019-12-05</time>
             </span>
 
           
@@ -241,7 +248,116 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <p>#设计模式-策略模式<br> ##设计模式<br>   ##策略模式的动机<br>    解决多方法以及选择的问题，在日常生活中，常常出现一个问题在不同环境下的拥有不同解决方案，如何合适的选取的相应的解决方案，<br>    这就是策略模式所解决的的问题，打个比方说，我们去要去A地，可选择的交通方式有很多，汽车，火车，飞机，轮船，可选的路径也有很多，<br>    途径B地或者途径C地等，然后根据具体情况选择相应的方案，比如说你想快速到达，就选飞机，想看沿途风景，选择汽车，火车等。<br>   ##策略模式的定义<br>   策略模式是对算法的包装，把使用算法的责任和算法本身分隔开，委派给不同的对象管理。<br>   ##UML类图<br>   <img src="/images/shejicelue01.jpg" alt><br>   ##Context<br>    <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Created by Zhang Ao on 2019/11/16 16:30</span></span><br><span class="line"><span class="comment"> * Email:17863572518@163.com</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Context</span> &#123;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Strategy strategy;</span><br><span class="line"></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="title">Context</span><span class="params">(Strategy strategy)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.strategy=strategy;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Excute</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        strategy.excute();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><a id="more"></a>
+<p>   ##Strategy接口<br>    <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">	public<span class="built_in"> interface </span>Strategy &#123;</span><br><span class="line">    public void excute();</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>   ##Strategy类</p>
+<pre><code>      /**
+ * Created by Zhang Ao on 2019/11/16 16:34
+ * Email:17863572518@163.com
+ */
+public class StragegyA implements Strategy {
+    @Override
+    public void excute() {
+        System.out.println(&quot;方法A执行了&quot;);
+
+    }
+}
+
+
+public class StragegyB implements Strategy {
+    @Override
+    public void excute() {
+        System.out.println(&quot;方法B执行了&quot;);
+
+    }
+}
+
+
+
+public class StragegyC implements Strategy {
+    @Override
+    public void excute() {
+        System.out.println(&quot;方法C执行了&quot;);
+    }
+}
+
+</code></pre><p>  ##测试类</p>
+<pre><code>public class Test {
+    public static void main(String[] args) {
+        Context A=new Context(new StragegyA());
+        A.Excute();
+        Context B=new Context(new StragegyB());
+        B.Excute();
+        Context C=new Context(new StragegyC());
+        C.Excute();
+    }
+}
+</code></pre><p> ##结果<br> <img src="/images/shejicelue02.jpg" alt><br> ##超市案例</p>
+<pre><code> public interface Strategy {
+    public   double  colmoney(double money);
+}
+
+
+
+
+public class MarketContext {
+    private   Strategy strategy;
+    public MarketContext(Strategy strategy){
+        this.strategy=strategy;
+    }
+    public double getmoney(double money)
+    {
+        return strategy.colmoney(money);
+
+    }
+}
+
+
+
+
+
+public class normal implements Strategy {
+    @Override
+    public double colmoney(double money) {
+        return money;
+    }
+}
+
+
+
+
+public class off implements Strategy {
+      private double offs=0.9;
+
+
+      public off(double offs)
+      {
+          this.offs=offs;
+      }
+    @Override
+
+    public double colmoney(double money) {
+
+        return offs*money;
+    }
+}
+
+
+
+public class Test {
+    public static void main(String[] args) {
+        MarketContext   MC=new MarketContext(new normal());
+
+        System.out.println( MC.getmoney(500));
+        MarketContext   MC2=new MarketContext(new off(0.9));
+
+        System.out.println( MC2.getmoney(500));
+
+    }
+}
+
+</code></pre><p>##策略模式优缺点<br>优点：<br>策略模式提供了对“开闭原则”的完美支持，用户可以在不修改原有系统的基础上选择算法或行为，也可以灵活地增加新的算法或行为。<br>        提供管理相关的算法族<br>        可以替换继承关系的办法。<br>        避免使用多重条件转移语句。<br>缺点:<br>        客户端必须知道所有的策略类，并自行决定使用哪一个策略类<br>        策略模式将造成产生很多策略类，可以在一定程度上减少对象的数量<br>##策略模式应用<br>    JAVASE中GUI编程中，布局管理<br>    Spring框架中，Resource接口，资源访问策略<br>    Javax.servlet.http.HttpServlet#service()</p>
+
     </div>
 
     
@@ -270,17 +386,14 @@
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2019/10/15/jQuery学习/" rel="next" title="jQuery学习">
-                  <i class="fa fa-chevron-left"></i> jQuery学习
+                <a href="/2019/10/31/spring/" rel="next" title="spring">
+                  <i class="fa fa-chevron-left"></i> spring
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2019/10/29/初学/" rel="prev" title="mybatis初学">
-                  mybatis初学 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
       </footer>
